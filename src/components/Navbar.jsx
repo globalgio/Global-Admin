@@ -31,19 +31,22 @@ const Navbar = () => {
       <h1 className="text-white text-2xl font-bold mb-4">Dashboard</h1>
       <ul className="flex space-x-6">
         <li>
-          <Link href="/students" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'students' ? 'text-white' : ''}`} onClick={() => handleLinkClick('students')}>Students</Link>
+          <Link href="/students" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'students' ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick('students')}>Students</Link>
         </li>
         <li>
-          <Link href="/schools" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'schools' ? 'text-white' : ''}`} onClick={() => handleLinkClick('schools')}>Schools</Link>
+          <Link href="/schools" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'schools' ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick('schools')}>Schools</Link>
         </li>
         <li>
-          <Link href="/coordinator" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'coordinator' ? 'text-white' : ''}`} onClick={() => handleLinkClick('coordinator')}>Coordinator</Link>
+          <Link href="/coordinator" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'coordinator' ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick('coordinator')}>Coordinator</Link>
         </li>
         <li>
-          <Link href="/reference-code" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'reference-code' ? 'text-white' : ''}`} onClick={() => handleLinkClick('reference-code')}>Reference Code</Link>
+          <Link href="/reference-code" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'reference-code' ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick('reference-code')}>Reference Code</Link>
         </li>
         <li>
-          <Link href="/bulk-upload" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'bulk-upload' ? 'text-white' : ''}`} onClick={() => handleLinkClick('bulk-upload')}>Bulk Upload</Link>
+          <Link href="/bulk-upload" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'bulk-upload' ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick('bulk-upload')}>Bulk Upload</Link>
+        </li>
+        <li>
+          <Link href="/logs" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'logs' ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick('bulk-upload')}>logs</Link>
         </li>
         {/* Conditional rendering for login/signup/logout */}
         {isLoggedIn ? (
@@ -53,10 +56,10 @@ const Navbar = () => {
         ) : (
           <>
             <li>
-              <Link href="/login" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'login' ? 'text-white' : ''}`} onClick={() => handleLinkClick('login')}>Login</Link>
+              <Link href="/login" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'login' ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick('login')}>Login</Link>
             </li>
             <li>
-              <Link href="/signup" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'signup' ? 'text-white' : ''}`} onClick={() => handleLinkClick('signup')}>Sign Up</Link>
+              <Link href="/signup" className={`text-gray-300 hover:text-white transition duration-200 ${activeLink === 'signup' ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick('signup')}>Sign Up</Link>
             </li>
           </>
         )}
