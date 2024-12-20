@@ -18,12 +18,16 @@ const StudentsSection = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
+        const token = localStorage.getItem("adminAuth"); // Get token from localStorage
         const response = await axios.get(
           "http://localhost:5002/api/admin/students",
           {
             params: {
               limit: studentsPerPage,
               startAfter, // Pass the startAfter value for pagination
+            },
+            headers: {
+              Authorization: `Bearer ${token}`, // Add token to headers
             },
           }
         );
