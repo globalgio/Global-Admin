@@ -16,7 +16,7 @@ const RequestCallback = () => {
 
             try {
                 const response = await axios.get(
-                    "http://localhost:5002/api/admin/request-callbacks",
+                    "https://api.gioi.isrc.org.in/api/admin/request-callbacks",
                     {
                         headers: {
                             Authorization: `Bearer ${adminAuth}`,

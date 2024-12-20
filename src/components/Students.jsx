@@ -20,7 +20,7 @@ const StudentsSection = () => {
       try {
         const token = localStorage.getItem("adminAuth"); // Get token from localStorage
         const response = await axios.get(
-          "http://localhost:5002/api/admin/students",
+          "https://api.gioi.isrc.org.in/api/admin/students",
           {
             params: {
               limit: studentsPerPage,

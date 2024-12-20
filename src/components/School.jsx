@@ -15,7 +15,7 @@ const SchoolSection = () => {
       const token = localStorage.getItem("adminAuth"); // Retrieve the token from local storage
       try {
         const response = await axios.get(
-          "http://localhost:5002/api/admin/schools",
+          "https://api.gioi.isrc.org.in/api/admin/schools",
           {
             headers: {
               Authorization: `Bearer ${token}`, // Include the token in the request headers

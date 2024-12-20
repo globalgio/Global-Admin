@@ -172,7 +172,7 @@ const Coordinator = () => {
     const token = localStorage.getItem("adminAuth");
     try {
       const response = await axios.get(
-        `http://localhost:5002/api/admin/coordinators/payment-details?userId=${userId}`,
+        "https://api.gioi.isrc.org.in/api/admin/coordinators/payment-details?userId=${userId}",
         {
           headers: {
             Authorization: `Bearer ${token}`,

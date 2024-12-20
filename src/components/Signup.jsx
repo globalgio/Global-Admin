@@ -32,7 +32,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5002/api/admin/register`,
+        "https://api.gioi.isrc.org.in/api/admin/register",
         formData
       );
       // Store admin auth token in local storage

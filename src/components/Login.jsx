@@ -14,10 +14,11 @@ const Login = () => {
     e.preventDefault();
     setError("");
     setSuccess("");
+ 
 
     try {
       const response = await axios.post(
-        `http://localhost:5002/api/admin/login`,
+        "https://api.gioi.isrc.org.in/api/admin/login",
         { email, password }
       );
       // Store admin auth token in local storage

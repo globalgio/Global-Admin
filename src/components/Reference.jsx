@@ -52,7 +52,7 @@ const ReferenceCodeGenerator = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5002/api/admin/generate-reference-code",
+        "https://api.gioi.isrc.org.in/api/admin/generate-reference-code",
         { prefix, schoolName },
         {
           headers: {

@@ -55,7 +55,7 @@ const BulkSection = () => {
       const token = localStorage.getItem("adminAuth"); // Get token
 
       const response = await axios.post(
-        "http://localhost:5002/api/admin/bulk-upload",
+        "https://api.gioi.isrc.org.in/api/admin/bulk-upload",
         formData,
         {
           headers: {
